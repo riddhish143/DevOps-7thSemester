@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from GitHub using the PAT
-                git url: "${REPO_URL}", branch: 'main', credentialsId: 'github-pat'
+                git url: "${REPO_URL}", branch: 'main', credentialsId: 'github_pat'
             }
         }
 
