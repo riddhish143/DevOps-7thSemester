@@ -4,7 +4,7 @@ pipeline {
     environment {
         REPO_URL = 'https://github.com/riddhish143/Electronic-Mart.git'
         DOCKER_COMPOSE_FILE = 'docker-compose.yaml'
-        GITHUB_CREDENTIALS = credentials('github-pat') // Reference the stored credential
+        GITHUB_CREDENTIALS = credentials('github_pat') // Reference the stored credential
         AWS_PUBLIC_IP = '13.232.11.130' // Replace with your actual AWS instance public IP
     }
 
